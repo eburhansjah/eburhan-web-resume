@@ -169,7 +169,7 @@ button:hover {
 }
 
 /*MEDIA QUERY: larger screens*/
-@media(min-width:750px){
+@media screen and (min-width:750px){
     #page-wrapper{
         display: flex;
         margin: 0 10%;
@@ -225,7 +225,7 @@ button:hover {
 }
 
 /*MEDIA QUERY: smaller screens*/
-@media(max-width:750px){
+@media screen and (max-width:750px){
     #page-wrapper{
         display: flex;
         margin: 0 5%;
