@@ -1,0 +1,263 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+/*Image alignment*/
+img.align-left{
+    float: left;
+    margin-right: 10px;
+}
+
+#ellen-plants{
+    display: block;
+    margin: 0 auto; /*Centers horizontally*/
+    max-width: 70vw;
+}
+
+/*Article settings*/
+.fig-item{
+    float: left;
+    display: block;
+    max-width: 30vw;
+}
+article{
+    clear: both;
+    overflow: auto;
+    width: 100%;
+}
+
+hgroup{
+    margin-top: 40px;
+}
+
+figure{
+    float: left;
+    max-width: 70vw;
+    padding: 5px;
+    margin: 40px;
+    border: 2px solid #ffffff;
+}
+
+figcaption{
+    font-size: 90%;
+    text-align: left;
+}
+
+/*Font sizing*/
+.medium-font-sz{
+    font-size: calc(2px + 2.5vw);
+}
+
+/*Text alignment*/
+.text-align-right{
+    float: right;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+/*Education settings*/
+ul.education{
+    list-style: none;
+    padding-left: 1%;
+    margin: 0;
+}
+
+.education-item{
+    display: block;
+    border-left-style: solid;
+    padding-left: 2%;
+    text-align: left;
+}
+
+/*Experience settings*/
+ul.experience{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.experience-item{
+    display: block;
+    border-left-style: none;
+    padding-left: 0%;
+    text-align: left;
+}
+
+/*NAVIGATION*/
+nav ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+nav li{
+    display: block;
+    /*padding: 2%;*/
+    /*margin: 1% 2%;*/
+    border-style: outset;
+}
+
+/*BODY*/
+#page-wrapper{
+    display: flex;
+    margin: 0 5%;
+    background-color: rgb(253, 232, 242); /*#fce4ec;*/
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*BODY: HEADER*/
+header{
+    text-align: center;
+    padding: 5%;
+}
+
+/*BODY: MAIN*/
+main {
+    /*flex: 1;*/
+    width: 100%;
+    max-width: 100%;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+}
+
+/*Calculator section*/
+#calculator-wrapper{
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    /*max-width: 30vw;*/
+    /*background-color: #f0f0f0;*/
+    /*background-color: whitesmoke;*/
+}
+
+.calculator{
+    background-color: #f0f0f0;
+    padding: 2%;
+    border-radius: 10px;
+    width: 300px;
+    text-align: left;
+    border-style: inset;
+}
+
+button {
+    margin: 1%;
+    padding: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*MEDIA QUERY: larger screens*/
+@media(min-width:750px){
+    #page-wrapper{
+        display: flex;
+        margin: 0 10%;
+    }
+
+    #content-wrapper{
+        margin: 0;
+        display: flex;
+        flex-direction: row; /*horizontal layout*/
+    }
+
+    #ellen-plants{
+        display: block;
+        margin: 0 auto; /*Centers horizontally*/
+        max-width: 70%;
+    }
+
+    header{
+        text-align: left;
+        padding-top: 2%;
+        padding-left: 2%;
+    }
+
+    main{
+        width: 70%;
+        max-width: 70%;
+        margin: 0 auto;
+    }
+
+    nav{
+        width: 30%;
+        height: 100%;
+        flex-direction: column; /*vertical layout*/
+    }
+
+    nav ul{
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center; /*centering items vertically*/
+    }
+
+    nav li{
+        display: block;
+        padding: 5%;
+        margin: 10% 5%;
+        text-align: center;
+        border-style: outset;
+    }
+}
+
+/*MEDIA QUERY: smaller screens*/
+@media(max-width:750px){
+    #page-wrapper{
+        display: flex;
+        margin: 0 5%;
+    }
+
+    #content-wrapper{
+        margin: 0 7%;
+        display: flex;
+        flex-direction: column; /*vertical layout*/
+    }
+
+    #ellen-plants{
+        display: block;
+        margin: 0 auto; /*Centers horizontally*/
+        max-width: 100%;
+    }
+
+    nav{
+        width: 100%;
+        height: auto;
+    }
+
+    nav ul{
+        padding-left: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav li{
+        display: inline-block;
+        padding: 2%;
+    }
+}

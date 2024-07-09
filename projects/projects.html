@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects | Resume</title>
+    <!--linking css file-->
+    <link href="../home/ellen-burhansjah-resume.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<!--Start of page-wrapper-->
+<div id="page-wrapper">
+    <!--Header-->
+    <header>
+        <h1>Ellen Burhansjah's</h1>
+        <p>online professional resume</p>
+    </header>
+    <div id="content-wrapper">
+        <!--Navigation-->
+        <nav>
+            <ul>
+                <li><a href="../home/ellen-burhansjah-resume.html">About</a></li>
+                <li><a href="../education/education.html">Education</a></li>
+                <li><a href="../experiences/experiences.html">Experiences</a></li>
+                <li><a href="../projects/projects.html">Projects</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a href="../hobbies-and-interests/hobbies-and-interests.html">Hobbies and Interests</a></li>
+            </ul>
+        </nav>
+        <br>
+        <!--Main-content-->
+        <main>
+            <h2 class="text-align-center">Projects</h2> <br><br>
+            <!--content must be at least half of screen-->
+            <ul class="experience">
+                <li class="experience-item">
+                    <p><strong>JavaScript Calculator</strong>,
+                        Boston MA <span class="text-align-right">July 2024</span></p>
+                    <!--Calculator wrapper-->
+                    <div id="calculator-wrapper">
+                        <div class="calculator">
+                            <!--First operand-->
+                            <label for="first-input">First Operand: </label><input id="first-input">
+
+                            <!--5 operator buttons-->
+                            <label>Operator:</label>
+                            <!--Addition-->
+                            <button onclick="Compute('+')">+</button>
+                            <!--Subtraction-->
+                            <button onclick="Compute('-')">-</button>
+                            <!--Multiplication-->
+                            <button onclick="Compute('*')">*</button>
+                            <!--Division-->
+                            <button onclick="Compute('/')">/</button>
+                            <!--Exponent-->
+                            <button onclick="Compute('**')">**</button>
+
+                            <!--Second operand-->
+                            <label for="second-input">Second Operand: </label><input id="second-input">
+
+                            <!--1 output with textual tag-->
+                            <h3 id="output_box">Result: <span id="computed-value"></span></h3>
+
+                            <!--Clear button-->
+                            <button onclick="clearInputs()">clear</button>
+                        </div> <!--End of calculator-->
+                    </div> <!--End of calculator wrapper-->
+                </li>
+                <li><br></li>
+                <li><strong>Tech stack:</strong> HTML, CSS, JavaScript</li>
+
+                <li><br></li>
+                <li><hr></li>
+                <li><br></li>
+
+                <li class="experience-item">
+                    <p><strong>Reconstructing 3D Volume with Low Signal-To-Background Ratio</strong>,
+                        Boston MA <span class="text-align-right">June 2024 - Present</span></p>
+                    <br>
+                    <ul>
+                        <li>Implementing conformational loss to quantify uncertainty for a
+                            more explainable and interpretable model</li>
+                    </ul>
+                </li>
+                <li><br></li>
+                <li><strong>Tech stack:</strong> Python, Pytorch, YAML, Bash, wandb, GitHub, BU SCC</li>
+                <li><br></li>
+                <li><strong>Github:</strong> <a href="https://github.com/eburhansjah/SBR_Net.git"
+                                                target="_blank">SBR-Net</a></li>
+
+                <li><br></li>
+                <li><hr></li>
+                <li><br></li>
+
+                <li class="experience-item">
+                    <p><strong>Evaluation of Lung Histology Inflammation Scores</strong>,
+                        Boston MA <span class="text-align-right">Jan - May 2024</span></p>
+                    <br>
+                    <ul>
+                        <li>Developed a semi-supervised deep learning model to
+                            predict inflammation level in a team of 2</li>
+                        <li>Implemented nuclei segmentation (HoVer-Net) and
+                            feature extraction (ResNet50 & PLIP) techniques</li>
+                        <li>Explored various methods for classification:
+                            Deep Sets, Set Transformer, and other 6 classifiers</li>
+                    </ul>
+                </li>
+                <li><br></li>
+                <li><strong>Tech stack:</strong> Python, PyTorch, Jupyter Notebook, Sklearn, Scipy,
+                                                    Matplotlib, OpenSlide, GitHub, BU SCC</li>
+                <li><br></li>
+                <li><strong>Github:</strong> <a href="https://github.com/wtzheng99/EC500_Project7.git"
+                                                target="_blank">EC500-Lung-Histology-Scoring</a></li>
+
+                <li><br></li>
+                <li><hr></li>
+                <li><br></li>
+
+                <li class="experience-item">
+                    <p><strong>A Multilingual Speech Emotion Recognition (SER) Model</strong>,
+                        Boston MA <span class="text-align-right">Jan - May 2024</span></p>
+                    <br>
+                    <ul>
+                        <li>Developed SER models to classify 4 emotions in
+                            multilingual audio samples in a team of 4</li>
+                        <li>Implemented and analyzed three deep learning models:
+                            Wav2Vec, 2D-CNN/LSTM with attention, and S4</li>
+                        <li>Utilized extensive pre-processing techniques to
+                            standardize audio samples and augment Mel spectrograms</li>
+                    </ul>
+                </li>
+                <li><br></li>
+                <li><strong>Tech stack:</strong> Python, PyTorch, Jupyter Notebook, Sklearn,
+                                                    Librosa, Matplotlib, GitHub, BU SCC</li>
+                <li><br></li>
+                <li><strong>Github:</strong> <a href="https://github.com/yunyunh123/EC523-SER.git"
+                                                target="_blank">EC523-SER</a></li>
+
+                <li><br></li>
+                <li><hr></li>
+                <li><br></li>
+
+                <li class="experience-item">
+                    <p><strong>Time-Series Forecasting on Global Economic Data</strong>,
+                        Boston MA <span class="text-align-right">Sep - Dec 2023</span></p>
+                    <br>
+                    <ul>
+                        <li>Analyzed the efficacy of ARIMA, and RLS algorithms
+                            for short and long term forecasting in a team of 3</li>
+                        <li>Conducted statistical analysis to evaluate model
+                            performance and interpret results accurately</li>
+                        <li>Produced a comprehensive final report and presented findings,
+                            providing insights and fostering discussion</li>
+                    </ul>
+                </li>
+                <li><br></li>
+                <li><strong>Tech stack:</strong> Python, SciKit, statsmodels, Numpy, Matplotlib, GitHub</li>
+                <li><br></li>
+                <li><strong>Github:</strong> <a href="https://github.com/MohamedAbdelnaby7/Stock-Prices-predication-.git"
+                                                target="_blank">EC503-Time-Series-Forecasting</a></li>
+
+                <li><br></li>
+                <li><hr></li>
+                <li><br></li>
+
+                <li class="experience-item">
+                    <p><strong>MyRecipes Database</strong>,
+                        Boston MA <span class="text-align-right">Jun - Aug 2023</span></p>
+                    <br>
+                    <ul>
+                        <li>Implemented a SQL database to manage users’ recipes and groceries lists</li>
+                        <li>Designed Entity Relationship Diagrams (ERD) for efficient data organization</li>
+                    </ul>
+                </li>
+                <li><br></li>
+                <li><strong>Tech stack:</strong> PostgreSQL, Lucidchart</li>
+                <li><br></li>
+                <li><strong>Github:</strong> <a href="https://github.com/eburhansjah/MyRecipes.git"
+                                                target="_blank">MET-CS-669-MyRecipes</a></li>
+
+                <li><br></li>
+                <li><hr></li>
+                <li><br></li>
+
+                <li class="experience-item">
+                    <p><strong>Image Editing App</strong>,
+                        Boston MA <span class="text-align-right">Jan - May 2023</span></p>
+                    <br>
+                    <ul>
+                        <li>Collaborated in a team of 7 people to create an app
+                            that filters and modifies image orientations</li>
+                        <li>Designed an interactive and user friendly front-end of the app</li>
+                        <li>Conducted testing and validation procedures to
+                            prevent potential bugs and ensuring optimal performance</li>
+                    </ul>
+                </li>
+                <li><br></li>
+                <li><strong>Tech stack:</strong> Java, AndroidStudio, Gitlab</li>
+                <li><br></li>
+                <li><strong>Github:</strong> <a href="https://github.com/eburhansjah/IFP.git"
+                                                target="_blank">EC327-IFP</a></li>
+
+            </ul>
+        </main>
+    </div> <!--End of content-wrapper-->
+    <!--Footer-->
+    <footer>
+        <p>All rights reserved by Ellen Burhansjah <a href="#">Credits</a> &#169;</p>
+    </footer>
+
+    <script src="../calculator/java-script-calculator.js"></script>
+</div> <!--End of page-wrapper-->
+</body>
+</html>
