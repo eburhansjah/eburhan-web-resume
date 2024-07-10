@@ -35,20 +35,22 @@ function Compute(operator){
                 break;
 
             case '**':
-                // Using for loop to see exponent operator in action:
-                if(input2 >= 0){
-                    result = 1; // #^0 is always 1
-                    for(let j=0; j < input2; j++){
-                            result *= input1;
-                        }
-                } else { // Taking into account of negative exponents
-                    result = 1;
-                    for (let j = 0; j < -input2; j++) {
-                        result *= input1;
-                    }
-                    result = 1 / result;
-                }
+                result = input1 ** input2;
                 break;
+                // // Using for loop to see exponent operator in action:
+                // if(input2 >= 0){
+                //     result = 1; // #^0 is always 1
+                //     for(let j=0; j < input2; j++){
+                //             result *= input1;
+                //         }
+                // } else { // Taking into account of negative exponents
+                //     result = 1;
+                //     for (let j = 0; j < -input2; j++) {
+                //         result *= input1;
+                //     }
+                //     result = 1 / result;
+                // }
+                // break;
 
             default:
                 result = 'Invalid operator. Please try again';
