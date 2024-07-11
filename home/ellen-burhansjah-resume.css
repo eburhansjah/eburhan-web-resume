@@ -105,7 +105,7 @@ nav li{
 #page-wrapper{
     display: flex;
     margin: 0 5%;
-    background-color: rgb(253, 232, 242); /*#fce4ec;*/
+    background-color: rgb(253, 232, 242, 0.5); /*(r, g, b, alpha_value)*/
     flex-direction: column;
     min-height: 100vh;
 }
@@ -140,9 +140,6 @@ footer {
     align-items: center;
     justify-content: center;
     height: 15vh;
-    /*max-width: 30vw;*/
-    /*background-color: #f0f0f0;*/
-    /*background-color: whitesmoke;*/
 }
 
 .calculator{
